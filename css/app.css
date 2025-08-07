@@ -55,10 +55,12 @@ a{
   padding: 1rem;
   transition: background-color 0.3s ease-out;
   text-align: center;
+  border: none;
 }
 
 .btn:hover{
   background-color: #769c02;
+  cursor: pointer;
 }
 
 /* Utilidades */
@@ -376,3 +378,19 @@ a{
 .campo label{
   flex-basis: 10rem;
 }
+
+/* .campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="email"], */
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select {
+  flex: 1;
+  border: 0.1rem solid #e1e1e1;
+  padding: 1rem;
+}
+
+/* .campo .input{
+  flex: 1;
+} */
+
