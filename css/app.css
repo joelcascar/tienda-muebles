@@ -54,6 +54,7 @@ a{
   font-weight: 900;
   padding: 1rem;
   transition: background-color 0.3s ease-out;
+  text-align: center;
 }
 
 .btn:hover{
@@ -63,6 +64,10 @@ a{
 /* Utilidades */
 .text-center{
   text-align: center;
+}
+
+.max-width-30{
+  max-width: 30rem;
 }
 
 /* Header y navegación */
@@ -283,4 +288,91 @@ a{
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* Página Blog */
+.contenedor-blog{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 4rem;
+}
+
+.entrada{
+  border-bottom: 2px solid #e1e1e1;
+  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+.entrada:last-child{
+  border: none;
+}
+
+.entrada-meta{
+  display: flex;
+  justify-content: space-between;
+}
+
+.entrada-meta p{
+  font-weight: 900;
+}
+
+.entrada-meta span{
+  color: #037bc0;
+}
+
+/* Página entrada Blog */
+
+.contenido-entrada-blog{
+  width: 60rem;
+  margin: 0 auto;
+}
+
+/* Página galería */
+
+.galeria{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+
+.galeria img{
+  width: 40rem;
+  height: 40rem;
+  object-fit: cover;
+}
+
+/* Página contacto */
+
+.formulario{
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.formulario fieldset{
+  border: 0.1rem solid #000 ;  
+  margin-bottom: 2rem;
+
+}
+
+.formulario legend{
+  background-color: #005485;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.campo{
+ display: flex;
+ margin-bottom: 2rem;
+}
+
+.campo label{
+  flex-basis: 10rem;
 }
